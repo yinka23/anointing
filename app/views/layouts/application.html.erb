@@ -36,15 +36,15 @@
       border-color: #f1f1f1;
   }
   .carousel-inner img {
-      -webkit-filter: color(90%);
-filter: color(90%); /* make all photos black and white */
+      -webkit-filter: grayscale(90%);
+filter: grayscale(90%); /* make all photos black and white */
       width: 100%; /* Set width to 100% */
       margin: auto;
   }
   .carousel-caption h3 {
       color: #fff !important;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
@@ -152,6 +152,7 @@ color: #fff;
   textarea {
       resize: none;
   }
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -173,7 +174,7 @@ Anointed
         <li><%= link_to root_path, class: 'navbar-brand' do %><i class="fa fa-home"></i></li><% end%>
         <li><%= link_to "About Us", about_path %></li>
         <li><%= link_to "Services", service_path %></li>
-        <li><%= link_to "Contact Us", new_contact_path %></li>
+        <li><%= link_to "Contact", new_contact_path %></li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
 
         </ul>
