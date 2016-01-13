@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+get '/jobs' => 'career#show'
 root 'pages#home'
 get '/about' => 'pages#about'
 get '/service' => 'pages#service'
