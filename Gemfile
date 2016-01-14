@@ -29,10 +29,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-# Use puma for webeserver
-gem 'puma', '2.11.1'
-#AWS SDK for Ruby. Provides both resource oriented interfaces and API clients fo#r AWS services.
-gem 'aws-sdk', '~> 2.2', '>= 2.2.8'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
