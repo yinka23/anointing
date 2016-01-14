@@ -234,53 +234,8 @@ Anointed
   <%= content_tag :div, value, class: "alert alert-#{key}" %>
 <% end %>
 <%= yield %>
+<%= render 'layouts/footer' %>
 </div>
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-
-<ul class="list-inline">
-<li>|<%= link_to "Home", root_path %></li>
-<li>|<%= link_to "About Us", about_path %></li>
-<li>|<%= link_to "Services", service_path %></li>
-<li>|<%= link_to "Contact Us", new_contact_path %></li>
-<li>|<%= link_to "Blog", new_contact_path %></li>
-<li>|<%= link_to "Career", jobs_path %></li>
-<li><i class="fa fa-facebook-square fa-2x"></i></li>
-<li><i class="fa fa-credit-card fa-2x"></i>
-</ul>
-
-  <p>Design by Saba Technologies LLC <i class="fa fa-copyright"></i><i class="fa fa-tree fa-2x"></i></p>
-</footer>
-
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip();
-
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[<%= link_to "Home", root_path %>]").on('click', function(event) {
-// Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
-  });
-})
-</script>
-
 </body>
 </html>
 
